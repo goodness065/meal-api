@@ -1,0 +1,32 @@
+.categories {
+  background: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  /* height: 80vh; */
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.category-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-each img {
+  width: 170px;
+  margin: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.category-each img:hover {
+  transform: scale(1.1);
+}

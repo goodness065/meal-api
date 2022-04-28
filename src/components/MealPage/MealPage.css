@@ -1,0 +1,67 @@
+.meal-con {
+  width: 100%;
+  background-color: #000;
+  color: rgb(214, 93, 93);
+  /* margin-top: -20px; */
+  min-height: 100vh;
+  height: auto;
+  color: #fff;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.arrow {
+  background-color: white;
+  -webkit-mask: url(../../images/arrow.svg) no-repeat center;
+  mask: url(../../images/arrow.svg) no-repeat center;
+  width: 49px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 20px;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end ; */
+}
+
+.meal-each {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: min(300px, 100%);
+  border-radius: 10px;
+  margin-top: 55px;
+}
+
+.me-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.food-name {
+  padding-top: 10px;
+  font-size: 26px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.inst {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.meal-inst {
+  /* padding: 0 10px; */
+  text-align: center;
+  padding-bottom: 20px;
+}
