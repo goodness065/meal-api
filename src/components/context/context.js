@@ -5,7 +5,6 @@ export const myContext = createContext();
 
 export const AppContext = ({ children }) => {
   const [meals, setMeals] = useState([]);
-  const [EachMeal, setEachMeal] = useState([]);
   const [categories, setCategories] = useState([]);
   const [randomMeals, setRandomMeals] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -28,14 +27,6 @@ export const AppContext = ({ children }) => {
     // eslint-disable-next-line
     []
   );
-
-  const fetchMealInfo = useCallback((mealId) => {
-    axios
-      .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
-      .then((res) => {
-        setEachMeal(res.data.meals);
-      });
-  }, []);
 
   const fetchCategoriesPage = useCallback(
     () => {
@@ -79,8 +70,6 @@ export const AppContext = ({ children }) => {
         fetchRandomPage,
         randomMeals,
         loading,
-        fetchMealInfo,
-        EachMeal,
       }}
     >
       {children}
